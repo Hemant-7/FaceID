@@ -7,12 +7,49 @@
 
 import SwiftUI
 
+import SwiftUI
+
+import SwiftUI
+
 struct AuthenticationView: View {
+    @StateObject private var viewModel = AuthenticationViewModel()
+
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            if viewModel.isAuthenticated {
+                WelcomeView()
+            } else {
+                Text("Authenticating...")
+                    .onAppear {
+                        viewModel.authenticate()
+                    }
+            }
+        }
+        .fullScreenCover(isPresented: $viewModel.needsAuthentication) {
+            DevicePasswordView(viewModel: viewModel)
+        }
     }
 }
 
-#Preview {
-    AuthenticationView()
+struct DevicePasswordView: View {
+    @ObservedObject var viewModel: AuthenticationViewModel
+
+    var body: some View {
+        VStack {
+            Text("Please authenticate with your device password")
+                .padding()
+
+            Button(action: {
+                viewModel.authenticate()
+            }) {
+                Text("Retry Authentication")
+                    .padding()
+                    .background(Color.blue)
+                    .foregroundColor(.white)
+                    .cornerRadius(8)
+            }
+        }
+        .padding()
+    }
 }
+

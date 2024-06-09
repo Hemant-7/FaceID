@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4163364D2C149E550052D31D /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4163364C2C149E550052D31D /* WelcomeView.swift */; };
+		4163364F2C149E950052D31D /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4163364E2C149E950052D31D /* LoginView.swift */; };
 		41D178B62C1499CF002FBD80 /* FaceIDDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D178B52C1499CF002FBD80 /* FaceIDDemoApp.swift */; };
 		41D178B82C1499CF002FBD80 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D178B72C1499CF002FBD80 /* ContentView.swift */; };
 		41D178BA2C1499D1002FBD80 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41D178B92C1499D1002FBD80 /* Assets.xcassets */; };
@@ -14,6 +16,8 @@
 		41D178C72C1499D1002FBD80 /* FaceIDDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D178C62C1499D1002FBD80 /* FaceIDDemoTests.swift */; };
 		41D178D12C1499D1002FBD80 /* FaceIDDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D178D02C1499D1002FBD80 /* FaceIDDemoUITests.swift */; };
 		41D178D32C1499D1002FBD80 /* FaceIDDemoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D178D22C1499D1002FBD80 /* FaceIDDemoUITestsLaunchTests.swift */; };
+		41D178E22C149AFC002FBD80 /* AuthenticationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D178E12C149AFC002FBD80 /* AuthenticationViewModel.swift */; };
+		41D178E42C149B24002FBD80 /* AuthenticationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D178E32C149B24002FBD80 /* AuthenticationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4163364C2C149E550052D31D /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		4163364E2C149E950052D31D /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		41D178B22C1499CF002FBD80 /* FaceIDDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FaceIDDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41D178B52C1499CF002FBD80 /* FaceIDDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceIDDemoApp.swift; sourceTree = "<group>"; };
 		41D178B72C1499CF002FBD80 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -44,6 +50,9 @@
 		41D178CC2C1499D1002FBD80 /* FaceIDDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FaceIDDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		41D178D02C1499D1002FBD80 /* FaceIDDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceIDDemoUITests.swift; sourceTree = "<group>"; };
 		41D178D22C1499D1002FBD80 /* FaceIDDemoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceIDDemoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		41D178DF2C149A73002FBD80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		41D178E12C149AFC002FBD80 /* AuthenticationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewModel.swift; sourceTree = "<group>"; };
+		41D178E32C149B24002FBD80 /* AuthenticationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +80,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4163364B2C149E3E0052D31D /* Welcome */ = {
+			isa = PBXGroup;
+			children = (
+				4163364C2C149E550052D31D /* WelcomeView.swift */,
+			);
+			path = Welcome;
+			sourceTree = "<group>";
+		};
 		41D178A92C1499CF002FBD80 = {
 			isa = PBXGroup;
 			children = (
@@ -94,6 +111,9 @@
 		41D178B42C1499CF002FBD80 /* FaceIDDemo */ = {
 			isa = PBXGroup;
 			children = (
+				4163364B2C149E3E0052D31D /* Welcome */,
+				41D178E02C149AEA002FBD80 /* Auth */,
+				41D178DF2C149A73002FBD80 /* Info.plist */,
 				41D178B52C1499CF002FBD80 /* FaceIDDemoApp.swift */,
 				41D178B72C1499CF002FBD80 /* ContentView.swift */,
 				41D178B92C1499D1002FBD80 /* Assets.xcassets */,
@@ -125,6 +145,16 @@
 				41D178D22C1499D1002FBD80 /* FaceIDDemoUITestsLaunchTests.swift */,
 			);
 			path = FaceIDDemoUITests;
+			sourceTree = "<group>";
+		};
+		41D178E02C149AEA002FBD80 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				41D178E12C149AFC002FBD80 /* AuthenticationViewModel.swift */,
+				41D178E32C149B24002FBD80 /* AuthenticationView.swift */,
+				4163364E2C149E950052D31D /* LoginView.swift */,
+			);
+			path = Auth;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,7 +287,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4163364F2C149E950052D31D /* LoginView.swift in Sources */,
+				4163364D2C149E550052D31D /* WelcomeView.swift in Sources */,
+				41D178E22C149AFC002FBD80 /* AuthenticationViewModel.swift in Sources */,
 				41D178B82C1499CF002FBD80 /* ContentView.swift in Sources */,
+				41D178E42C149B24002FBD80 /* AuthenticationView.swift in Sources */,
 				41D178B62C1499CF002FBD80 /* FaceIDDemoApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -425,6 +459,7 @@
 				DEVELOPMENT_TEAM = 5MJL9QS49T;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FaceIDDemo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -454,6 +489,7 @@
 				DEVELOPMENT_TEAM = 5MJL9QS49T;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FaceIDDemo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
