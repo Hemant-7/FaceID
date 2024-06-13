@@ -12,6 +12,7 @@ struct WelcomeView: View {
         Text("Welcome!")
             .font(.largeTitle)
             .padding()
+            .accessibilityIdentifier("WelcomeView")
     }
 }
 

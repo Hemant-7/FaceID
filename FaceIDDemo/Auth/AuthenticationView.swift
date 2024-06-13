@@ -7,10 +7,6 @@
 
 import SwiftUI
 
-import SwiftUI
-
-import SwiftUI
-
 struct AuthenticationView: View {
     @StateObject private var viewModel = AuthenticationViewModel()
 

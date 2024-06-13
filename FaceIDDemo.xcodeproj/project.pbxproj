@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		4163364D2C149E550052D31D /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4163364C2C149E550052D31D /* WelcomeView.swift */; };
 		4163364F2C149E950052D31D /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4163364E2C149E950052D31D /* LoginView.swift */; };
+		41AAFC622C19CB43008E6AD1 /* AuthenticationViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41AAFC612C19CB43008E6AD1 /* AuthenticationViewModelTests.swift */; };
+		41AAFC642C19CB73008E6AD1 /* AuthenticationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41AAFC632C19CB73008E6AD1 /* AuthenticationUITests.swift */; };
 		41D178B62C1499CF002FBD80 /* FaceIDDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D178B52C1499CF002FBD80 /* FaceIDDemoApp.swift */; };
 		41D178B82C1499CF002FBD80 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D178B72C1499CF002FBD80 /* ContentView.swift */; };
 		41D178BA2C1499D1002FBD80 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41D178B92C1499D1002FBD80 /* Assets.xcassets */; };
@@ -40,6 +42,8 @@
 /* Begin PBXFileReference section */
 		4163364C2C149E550052D31D /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 		4163364E2C149E950052D31D /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		41AAFC612C19CB43008E6AD1 /* AuthenticationViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewModelTests.swift; sourceTree = "<group>"; };
+		41AAFC632C19CB73008E6AD1 /* AuthenticationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationUITests.swift; sourceTree = "<group>"; };
 		41D178B22C1499CF002FBD80 /* FaceIDDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FaceIDDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41D178B52C1499CF002FBD80 /* FaceIDDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceIDDemoApp.swift; sourceTree = "<group>"; };
 		41D178B72C1499CF002FBD80 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -134,6 +138,7 @@
 			isa = PBXGroup;
 			children = (
 				41D178C62C1499D1002FBD80 /* FaceIDDemoTests.swift */,
+				41AAFC612C19CB43008E6AD1 /* AuthenticationViewModelTests.swift */,
 			);
 			path = FaceIDDemoTests;
 			sourceTree = "<group>";
@@ -143,6 +148,7 @@
 			children = (
 				41D178D02C1499D1002FBD80 /* FaceIDDemoUITests.swift */,
 				41D178D22C1499D1002FBD80 /* FaceIDDemoUITestsLaunchTests.swift */,
+				41AAFC632C19CB73008E6AD1 /* AuthenticationUITests.swift */,
 			);
 			path = FaceIDDemoUITests;
 			sourceTree = "<group>";
@@ -300,6 +306,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41AAFC622C19CB43008E6AD1 /* AuthenticationViewModelTests.swift in Sources */,
 				41D178C72C1499D1002FBD80 /* FaceIDDemoTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -309,6 +316,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				41D178D12C1499D1002FBD80 /* FaceIDDemoUITests.swift in Sources */,
+				41AAFC642C19CB73008E6AD1 /* AuthenticationUITests.swift in Sources */,
 				41D178D32C1499D1002FBD80 /* FaceIDDemoUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
